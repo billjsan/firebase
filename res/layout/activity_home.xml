@@ -10,11 +10,11 @@
         android:id="@+id/bem_vindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
-        android:textSize="30sp"
+        android:layout_marginTop="36dp"
         android:text="Bem Vindo"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,9 +22,45 @@
         android:id="@+id/sair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Sair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="272dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botao_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_message"
+        app:layout_constraintStart_toEndOf="@+id/edit_message"
+        app:layout_constraintTop_toTopOf="@+id/edit_message"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/chat_area"
+        android:layout_width="408dp"
+        android:layout_height="439dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/edit_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bem_vindo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
